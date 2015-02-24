@@ -9,10 +9,25 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FodyProblem.iOS", "FodyProb
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{148F36CD-D2CF-49BB-8D54-03063D0FABF5}"
 	ProjectSection(SolutionItems) = preProject
-		.nuget\packages.config = .nuget\packages.config
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FodyProblem.Core.Tests", "FodyProblem.Core.Tests\FodyProblem.Core.Tests.csproj", "{9B74510A-AFE1-4FD0-BFDE-E48F94130E7A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D14AE508-1F4E-4FF5-B7DA-C1634B1A089A}"
+	ProjectSection(SolutionItems) = preProject
+		build-helpers.fsx = build-helpers.fsx
+		build.fsx = build.fsx
+		build.sh = build.sh
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "xpkg", "xpkg", "{B57071BF-DDDE-45CD-88D4-4B18D6F8776B}"
+	ProjectSection(SolutionItems) = preProject
+		xpkg\xamarin-component = xpkg\xamarin-component
+		xpkg\xamarin-component.exe = xpkg\xamarin-component.exe
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,5 +50,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B57071BF-DDDE-45CD-88D4-4B18D6F8776B} = {D14AE508-1F4E-4FF5-B7DA-C1634B1A089A}
 	EndGlobalSection
 EndGlobal
